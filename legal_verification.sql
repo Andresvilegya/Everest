@@ -9,6 +9,7 @@ CREATE TABLE mbaf_system.dbo.legal_verification (
 	answer_date date NULL,
 	addressee_type int NOT NULL,
 	addressee_name nvarchar(MAX) COLLATE SQL_Latin1_General_CP1251_CI_AS NULL,
+	verification_reason int NOT NULL,
 	verification_status int NOT NULL, 
 	link_request nvarchar(MAX) COLLATE SQL_Latin1_General_CP1251_CI_AS NULL,
 	link_answer nvarchar(MAX) COLLATE SQL_Latin1_General_CP1251_CI_AS NULL,
@@ -21,3 +22,4 @@ CREATE TABLE mbaf_system.dbo.legal_verification (
 	delete_statute tinyint DEFAULT 0 NOT NULL,
 	CONSTRAINT legal_verification PRIMARY KEY (legal_verification_id)
 );
+
