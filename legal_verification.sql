@@ -20,6 +20,7 @@ CREATE TABLE mbaf_system.dbo.legal_verification (
 	delete_user nvarchar(50) COLLATE SQL_Latin1_General_CP1251_CI_AS NULL,
 	delete_date datetime NULL,
 	delete_statute tinyint DEFAULT 0 NOT NULL,
-	CONSTRAINT legal_verification PRIMARY KEY (legal_verification_id)
+	CONSTRAINT PK_legal_verification PRIMARY KEY (legal_verification_id)
 );
+
 
